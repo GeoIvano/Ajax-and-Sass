@@ -8,7 +8,7 @@ $(document).ready(function() {
         })
     })
     $("#btn2").click(function() {
-        $.getJSON('https://jsonplaceholder.typicode.com/users', function(data) {
+        $.get('https://jsonplaceholder.typicode.com/users', function(data) {
             $.each(data, function(i, person) {
                 $("#container2").append(`<div>Position: ${i+1}<br>Email: ${person.email}<br>Phone: ${person.phone}</div>`)
             })
