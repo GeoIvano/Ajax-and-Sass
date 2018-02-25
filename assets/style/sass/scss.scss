@@ -1,0 +1,60 @@
+@import "variables";
+@mixin btnStyle {
+    text-transform: uppercase;
+    cursor: pointer;
+    border: .1em solid black;
+    display: inline-block;
+    width: 49%;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+@mixin containerStyle {
+    width: 49%;
+    display: inline-block;
+    & div {
+        color: blue;
+    }
+    &>div:nth-of-type(even) {
+        border: 0.1em solid black;
+    }
+    &>div:nth-of-type(odd) {
+        background-color: skyblue;
+        border: .1em solid black;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+span {
+    border-bottom: 0.1em solid yellow;
+}
+
+#btn {
+    @include btnStyle;
+    color: $btnColor;
+    background-color: $btnBG
+}
+
+#btn2 {
+    @include btnStyle;
+    color: $btn2Color;
+    background-color: $btnBG2
+}
+
+#container {
+    @include containerStyle;
+}
+
+#container2 {
+    @include containerStyle;
+    &>div:nth-of-type(odd) {
+        background-color: rgb(176, 201, 35);
+    }
+}
