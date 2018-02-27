@@ -9,7 +9,7 @@ span {
   cursor: pointer;
   border: .1em solid black;
   display: inline-block;
-  width: 49%;
+  width: 49.8%;
   margin: auto;
   padding: 1em;
   text-align: center;
@@ -24,7 +24,7 @@ span {
   cursor: pointer;
   border: .1em solid black;
   display: inline-block;
-  width: 49%;
+  width: 49.8%;
   margin: auto;
   padding: 1em;
   text-align: center;
@@ -35,27 +35,29 @@ span {
   background-color: #8bb994; }
 
 #container {
-  width: 49%;
-  display: inline-block; }
-  #container div {
+  width: 49.8%;
+  display: inline-block;
+  list-style-type: square; }
+  #container li {
     color: blue; }
-  #container > div:nth-of-type(even) {
+  #container > li:nth-of-type(even) {
     border: 0.1em solid black; }
-  #container > div:nth-of-type(odd) {
+  #container > li:nth-of-type(odd) {
     background-color: skyblue;
     border: .1em solid black; }
 
 #container2 {
-  width: 49%;
-  display: inline-block; }
-  #container2 div {
+  width: 49.8%;
+  display: inline-block;
+  list-style-type: square; }
+  #container2 li {
     color: blue; }
-  #container2 > div:nth-of-type(even) {
+  #container2 > li:nth-of-type(even) {
     border: 0.1em solid black; }
-  #container2 > div:nth-of-type(odd) {
+  #container2 > li:nth-of-type(odd) {
     background-color: skyblue;
     border: .1em solid black; }
-  #container2 > div:nth-of-type(odd) {
+  #container2 > li:nth-of-type(odd) {
     background-color: #b0c923; }
 
 /*# sourceMappingURL=scss.css.map */

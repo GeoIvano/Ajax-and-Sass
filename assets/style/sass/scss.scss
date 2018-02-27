@@ -4,7 +4,7 @@
     cursor: pointer;
     border: .1em solid black;
     display: inline-block;
-    width: 49%;
+    width: 49.8%;
     margin: auto;
     padding: 1em;
     text-align: center;
@@ -14,15 +14,16 @@
 }
 
 @mixin containerStyle {
-    width: 49%;
+    width: 49.8%;
     display: inline-block;
-    & div {
+    list-style-type: square;
+    & li {
         color: blue;
     }
-    &>div:nth-of-type(even) {
+    &>li:nth-of-type(even) {
         border: 0.1em solid black;
     }
-    &>div:nth-of-type(odd) {
+    &>li:nth-of-type(odd) {
         background-color: skyblue;
         border: .1em solid black;
     }
@@ -39,13 +40,13 @@ span {
 #btn {
     @include btnStyle;
     color: $btnColor;
-    background-color: $btnBG
+    background-color: $btnBG;
 }
 
 #btn2 {
     @include btnStyle;
     color: $btn2Color;
-    background-color: $btnBG2
+    background-color: $btnBG2;
 }
 
 #container {
@@ -54,7 +55,7 @@ span {
 
 #container2 {
     @include containerStyle;
-    &>div:nth-of-type(odd) {
+    &>li:nth-of-type(odd) {
         background-color: rgb(176, 201, 35);
     }
 }
